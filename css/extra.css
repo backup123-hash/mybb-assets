@@ -1,0 +1,232 @@
+/* ===== Light Mode and Dark Mode Styles ===== */
+
+/* Scroll to Top Button Styles */
+.scrollToTop {
+    background: #2ECC71;
+    color: white;
+    position: fixed;
+    z-index: 4000;
+    bottom: 143px;
+    right: 20px;
+    border-radius: 2px;
+    padding: 9px 10px;
+    cursor: pointer;
+    display: block;
+    font-size: 18px;
+}
+
+/* Scroll to Down Button Styles */
+.scrollToDown {
+    background: #2ECC71;
+    color: white;
+    position: fixed;
+    z-index: 4000;
+    bottom: 100px;
+    right: 20px;
+    border-radius: 2px;
+    padding: 9px 10px;
+    cursor: pointer;
+    display: block;
+    font-size: 18px;
+}
+
+/* Light Mode Overrides for Scroll Buttons */
+body.light-mode .scrollToTop,
+body.light-mode .scrollToDown {
+    background: #2ECC71; /* Keep the same color for consistency */
+    color: white;
+}
+
+/* Avatar Header Styles */
+#avatarheader {
+    cursor: pointer;
+    float: right;
+    position: relative;
+    border-radius: 50%;
+    right: -10px;
+    bottom: 11px;
+}
+
+/* Avatar Header Hover Effect */
+#avatarheader:hover {
+    opacity: 0.6;
+}
+
+/* Header Bar Styles */
+.haut {
+    background: rgb(36, 36, 36); /* Dark background */
+    width: 100%;
+    float: right;
+    box-shadow: 0px 1px 1px 1px rgb(0, 0, 0, 0.3);
+    position: fixed;
+    height: 70px;
+    z-index: 1000;
+    text-align: left;
+}
+
+/* Light Mode Override for Header Bar */
+body.light-mode .haut {
+    background: #ffffff; /* White background in light mode */
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+}
+
+/* Header List Styles */
+.headerlist {
+    width: 100%;
+    text-align: left;
+    border-bottom: 2px solid #2ECC71;
+    background: #FFF none repeat scroll 0% 0%;
+    font-size: 15px;
+}
+
+/* Light Mode Override for Header List */
+body.light-mode .headerlist {
+    background: #ffffff none repeat scroll 0% 0%; /* White background in light mode */
+}
+
+/* Header List Unordered List Styles */
+.headerlist ul {
+    display: inline;
+    text-align: right;
+    color: #2ECC71;
+    position: relative;
+    text-decoration: none;
+}
+
+/* Header List List Item Styles */
+.headerlist ul li {
+    display: inline-block;
+    padding: 14px 13px;
+}
+
+/* Menu Dropdown Styles */
+#menu-deroulant,
+#menu-deroulant ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Menu Dropdown Container Styles */
+#menu-deroulant {
+    /* Center the menu */
+    text-align: center;
+}
+
+/* Menu Dropdown List Item Styles */
+#menu-deroulant li {
+    /* Place links horizontally */
+    display: inline-block;
+}
+
+/* Menu Dropdown Unordered List List Item Styles */
+#menu-deroulant ul li {
+    /* Remove horizontal behavior for sub-menu links */
+    display: inherit;
+}
+
+/* Menu Dropdown Link Styles */
+#menu-deroulant a {
+    text-decoration: none;
+    display: block;
+    color: #000;
+}
+
+/* Menu Dropdown Unordered List Styles (Sub-menus) */
+#menu-deroulant ul {
+    position: absolute;
+    /* Hide sub-menus off-screen to the left */
+    left: -999em;
+    text-align: left;
+    z-index: 1000;
+}
+
+/* Show Sub-menus on Hover */
+#menu-deroulant li:hover ul {
+    /* Replace sub-menus when hovering list items */
+    left: auto;
+}
+
+/* Sub-menu Link Styles */
+#menu-deroulant li:hover ul li a {
+    background-color: #242424; /* Dark background for sub-menu items */
+    padding: 13px;
+    width: 100%;
+}
+
+/* Light Mode Override for Sub-menu Link Styles */
+body.light-mode #menu-deroulant li:hover ul li a {
+    background-color: #f9f9f9; /* Lighter background in light mode */
+    color: #222; /* Dark text color */
+}
+
+/* Menu Dropdown Link Styles */
+#menu-deroulant li a {
+    color: rgb(230, 230, 230);
+    padding: 25px 14px;
+    transition: background-color 200ms, color 200ms;
+    font-size: 14px;
+}
+
+/* Light Mode Override for Menu Links */
+body.light-mode #menu-deroulant li a {
+    color: #222; /* Dark text color in light mode */
+}
+
+/* Menu List Item Hover Styles */
+#menu-deroulant li:hover {
+    background: rgb(18, 18, 18); /* Dark background on hover */
+    color: rgb(123, 123, 123);
+    border-bottom: 2px solid #2ECC71;
+}
+
+/* Light Mode Override for Menu List Item Hover Styles */
+body.light-mode #menu-deroulant li:hover {
+    background: #f0f0f0; /* Lighter background in light mode */
+    color: #333; /* Dark text color */
+}
+
+/* Sub-menu List Item Hover Styles */
+#menu-deroulant li:hover ul li:hover {
+    color: #2ECC71;
+    border: none;
+}
+
+/* Sub-menu List Item Link Hover Styles */
+#menu-deroulant li:hover ul li:hover a {
+    background: rgb(18, 18, 18); /* Dark background on hover */
+}
+
+/* Light Mode Override for Sub-menu List Item Link Hover Styles */
+body.light-mode #menu-deroulant li:hover ul li:hover a {
+    background: #e0e0e0; /* Lighter background in light mode */
+}
+
+/* Menu Dropdown Container Styles */
+#menu-deroulant {
+    float: right;
+    vertical-align: middle;
+    position: relative;
+    right: 35px;
+    letter-spacing: 0.4px;
+}
+
+/* Media Query for Responsive Layout (Max Width: 768px) */
+@media (max-width: 768px) {
+    .haut {
+        text-align: center;
+    }
+
+    .scrollToDown,
+    .scrollToTop {
+        bottom: 14553px; /* Hide scroll buttons on small screens */
+    }
+}
+
+/* Media Query for Wide Layout (Max Width: 1280px) - Same as above, consider if needed */
+@media (max-width: 1280px) {
+    .scrollToDown,
+    .scrollToTop {
+        bottom: 14553px; /* Hide scroll buttons */
+    }
+}
