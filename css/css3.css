@@ -1,0 +1,339 @@
+/* ===== Light Mode and Dark Mode Styles ===== */
+
+/* Table cell border fix (first child) */
+tr td.trow1:first-child,
+tr td.trow2:first-child,
+tr td.trow_shaded:first-child {
+    border-left: 0;
+}
+
+/* Header block styles */
+#header_block {
+    width: 100%;
+    text-align: left;
+    height: 139px;
+    border-bottom: 2px solid #2ECC71;
+    text-shadow: 0px 1px 0px rgb(39, 33, 59);
+    animation: bganim 29s linear infinite;
+}
+
+/* Light Mode Override for Header Block */
+body.light-mode #header_block {
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2); /* Lighter text shadow for light mode */
+}
+
+/* Background animation keyframes */
+@keyframes bganim {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+/* Icon button styles */
+#iconbouton {
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+    font-size: 14px;
+    background: #2ECC71 none repeat scroll 0% 0%;
+    color: #FFF;
+}
+
+/* Team member styles */
+.teammember {
+    background: #F0F0F0 none repeat scroll 0% 0%;
+    border-bottom: 4px solid #E3E3E3;
+    margin: 18px;
+    display: inline-block;
+    padding: 55px 0px;
+    width: 24%;
+    font-size: 17px;
+}
+
+/* Light Mode Override for Team Members */
+body.light-mode .teammember {
+    background: #f9f9f9 none repeat scroll 0% 0%; /* Lighter background */
+    border-bottom: 4px solid #ddd; /* Lighter border */
+}
+
+/* Header list list item transition */
+.headerlist ul li {
+    transition: all 200ms;
+}
+
+/* Header list list item hover effect */
+.headerlist ul li:hover {
+    background: #F9F9F9;
+}
+
+/* Light Mode Override for Header List Item Hover */
+body.light-mode .headerlist ul li:hover {
+    background: #e0e0e0; /* Lighter background */
+}
+
+/* Header list list item link hover effect */
+.headerlist ul li:hover a {
+    text-decoration: none;
+}
+
+/* Header link hover effect */
+.haut a:hover {
+    text-decoration: none;
+    color: white !important;
+}
+
+/* Light Mode Override for Header Link Hover */
+body.light-mode .haut a:hover {
+    color: #222 !important; /* Darker text color in light mode */
+}
+
+/* Table cell border fix (last child) */
+tr td.trow1:last-child,
+tr td.trow2:last-child,
+tr td.trow_shaded:last-child {
+    border-right: 0;
+}
+
+/* Table border styles */
+.tborder {}
+
+/* Table border last row cell styles */
+.tborder tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.tborder tbody tr:last-child td:first-child {}
+
+.tborder tbody tr:last-child td:last-child {}
+
+/* Table header styles */
+.thead {}
+
+/* Table header collapsed styles */
+.thead_collapsed {}
+
+/* Table header left styles */
+.thead_left {
+    -moz-border-radius-topright: 0;
+    -webkit-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+/* Table header right styles */
+.thead_right {
+    -moz-border-radius-topleft: 0;
+    -webkit-border-top-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+/* Table category menu styles */
+.tcat_menu {
+    -moz-border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+
+/* Table category collapse collapsed styles */
+.tborder tbody:nth-last-child(2) .tcat_collapse_collapsed {}
+
+/* Form and input element styles (These were already defined in your main CSS, but I've included them here for completeness.  You might want to refine them specifically for this section.) */
+button,
+input.button,
+input.textbox,
+input.invalid_field,
+input.valid_field,
+select,
+textarea,
+.editor_control_bar,
+blockquote,
+.codeblock,
+fieldset,
+.pm_alert,
+.red_alert,
+.popup_menu,
+.postbit_buttons > a,
+a.button { /* Add Light mode Style if needed*/}
+/* Post author styles (classic layout) */
+.post.classic .post_author {}/* Add Light mode Style if needed*/
+/* Popup menu item styles */
+.popup_menu .popup_item_container:first-child .popup_item {}/* Add Light mode Style if needed*/
+/* Popup menu item styles */
+.popup_menu .popup_item_container:last-child .popup_item {}/* Add Light mode Style if needed*/
+/* Pagination link styles */
+.pagination a {}/* Add Light mode Style if needed*/
+/* Poll bar styles */
+.pollbar {}/* Add Light mode Style if needed*/
+/* Mobile logo and active navigation styles */
+.logo_mobile,
+#nav_active {
+    display: none;
+}
+
+/* Logo styles */
+.logo {
+    float: left;
+}
+
+/* Forum container styles */
+.forum {
+    width: 77%;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+
+    /* Hide elements on mobile */
+    #threads,
+    #views,
+    #replies,
+    #lastpost,
+    .side,
+    .useroptions {
+        display: none;
+    }
+
+    /* Adjust footer position */
+    .footer-distributed {
+        bottom: -50px !important;
+    }
+
+    /* Hide desktop specific elements */
+    #profile_desktop,
+    #desktop_post,
+    #menu_desktop,
+    #notif_desktop,
+    .hide_mobile {
+        display: none;
+    }
+
+    /* Display mobile specific elements */
+    #mobile_profile,
+    #mobile_post,
+    #mobile_menu {
+        display: block !important;
+    }
+
+    /* Display posts in block format */
+    .post_flexible {
+        display: block;
+    }
+
+    /* Hide header list */
+    .headerlist {
+        display: none;
+    }
+
+    /* Display navigation bits */
+    #nav_bit_complet {
+        display: inline-block;
+    }
+
+    /* Hide navigation elements */
+    .navigation,
+    #header_block,
+    .nav_link,
+    .scrollToDown,
+    .scrollToTop {
+        display: none;
+    }
+
+    /* Center text in header */
+    .haut {
+        text-align: center;
+    }
+
+    /* Adjust forum and wrapper widths */
+    .forum,
+    .wrapper {
+        width: 100%;
+    }
+
+    /* Adjust post author in classic layout */
+    .post.classic .post_author {
+        float: none;
+        width: 100%;
+        padding: 20px 0px;
+    }
+
+    /* Display mobile member block */
+    #mobile_member {
+        display: block;
+    }
+
+    /* Display team member block */
+    .teammember {
+        display: block;
+        width: 60%
+    }
+
+    /* Adjust logo position */
+    #logo {
+        left: -15px;
+    }
+}
+
+/* Media Queries for wider layouts */
+@media (max-width: 1280px) {
+    /* Adjust wrapper width */
+    .wrapper {
+        width: 100%;
+    }
+
+    /* Adjust buy theme max height */
+    #buytheme {
+        max-height: 80px;
+    }
+
+    /* Hide Elements that is not needed */
+    #threads,
+    #views,
+    #replies,
+    #lastpost,
+    .scrollToDown,
+    .scrollToTop,
+    .star_rating_container,
+    #rating {
+        display: none;
+    }
+}
+
+/* Media Queries for menu */
+@media (max-width: 1280px) {
+
+    /* Mobile Menu*/
+    #menu_mobile {
+        display: block !important;
+    }
+
+    /* Desktop Menu*/
+    #menu_desktop,
+    .hide_mobile {
+        display: none;
+    }
+}
+
+/* Navigation and content width adjustments */
+#nav_width {
+    float: left;
+    width: 24%;
+}
+
+#content_width {
+    float: right;
+    width: 74%;
+}
+
+/* Media Queries for Nav */
+@media (max-width: 768px) {
+
+    /* Set to 100% width*/
+    #nav_width,
+    #content_width {
+        float: none;
+        width: 100% !important;
+        margin-top: 15px;
+    }
+}
