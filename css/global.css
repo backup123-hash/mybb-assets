@@ -1,0 +1,2271 @@
+/* ===== Light Mode overrides ===== */
+body.light-mode #hb_title {
+    color: black;
+    font-size: 30px;
+    position: relative;
+    font-family: 'Roboto';
+    left: 85px;
+    top: 30px;
+}
+body.light-mode table {
+    color: black;
+    font-size: 13px;
+}
+body.light-mode a.button:link,
+body.light-mode a.button:visited,
+body.light-mode a.button:active {
+    background: lightgray;
+    color: black; /* ✅ Changed from #FFF to black for better contrast on light gray */
+    margin: 2px;
+    border-radius: 2px;
+    padding: 11px 15px;
+    transition: all 600ms;
+    border: none;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* ✅ Light mode link colors */
+body.light-mode a:link,
+body.light-mode a:active,
+body.light-mode a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+/* ✅ Light mode header/footer blocks */
+body.light-mode .tcat,
+body.light-mode .thead,
+body.light-mode .tfoot {
+    background-color: #2ecc71 !important;
+    color: #333 !important;
+    border-color: #ccc !important;
+}
+
+
+
+body.light-mode #header_block {
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+} 
+/* ===== Light Mode for form elements ===== */
+
+/* === Full Light Mode Overrides === */
+/* Remove background color on hover for menu dropdown links */
+body.light-mode #menu-deroulant li a:hover {
+    background-color: transparent !important; 
+    color: #222 !important; 
+}
+/* Remove background on hover and change text color for top bar links */
+body.light-mode .haut a:hover {
+    background: none !important; 
+    color: #777 !important; 
+    text-decoration: underline; /* Reintroduce the underline */
+}
+
+
+/* Set background and text color for light mode body */
+body.light-mode {
+	background: #ffffff !important;
+	color: #222 !important;
+}
+/* ===== Light Mode Menu Dropdown Fix ===== */
+
+/* Style for list items in dropdown menu */
+body.light-mode #menu-deroulant li {
+    position: relative;
+}
+
+/* Style for the dropdown menu itself (ul) */
+body.light-mode #menu-deroulant li ul {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    z-index: 1000; /* Ensure it's on top of other elements */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px; /* Minimum width of the dropdown */
+}
+
+/* Show the dropdown menu on hover */
+body.light-mode #menu-deroulant li:hover ul {
+    display: block;
+}
+
+/* Style for links within the dropdown menu */
+body.light-mode #menu-deroulant li ul li a {
+    display: block;
+    padding: 10px;
+    color: #222;
+    background: #fff;
+    text-decoration: none;
+}
+
+/* Hover effect for links within the dropdown menu */
+body.light-mode #menu-deroulant li ul li a:hover {
+    background: #f0f0f0;
+}
+
+
+/* Main content wrapper */
+body.light-mode #content {
+	background: #ffffff !important;
+	color: #222 !important;
+}
+
+
+/* Header bar */
+body.light-mode .haut {
+	background: #ffffff !important;
+	color: #000 !important;
+	box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1) !important;
+}
+
+body.light-mode .haut a {
+	color: #222 !important;
+}
+
+/* Footer */
+body.light-mode .footer-distributed {
+	background: #f2f2f2 !important;
+	color: #222 !important;
+	border-top: 3px solid #2ecc71;
+}
+
+/* Table rows */
+body.light-mode .trow1,
+body.light-mode .trow2 {
+	background: #ffffff !important;
+	color: #222 !important;
+	border-color: #ddd !important;
+}
+
+
+/* Navigation breadcrumb */
+body.light-mode .navigation {
+	background: #f0f0f0 !important;
+	color: #2ecc71 !important;
+	border-bottom: 3px solid #ccc !important;
+}
+
+/* Inputs & textboxes */
+body.light-mode input.textbox,
+body.light-mode textarea,
+body.light-mode select {
+	background: #ffffff !important;
+	color: #222 !important;
+	border: 1px solid #ccc !important;
+}
+
+/* Buttons */
+body.light-mode button,
+body.light-mode input.button {
+	background: #e0e0e0 !important;
+	color: #111 !important;
+	border: 1px solid #bbb !important;
+	border-radius: 2px;
+}
+
+/* Input and textarea styling for light mode */
+body.light-mode input.textbox,
+body.light-mode textarea {
+    background-color: #ffffff !important;
+    color: #333 !important;
+    border: 1px solid #ccc !important;
+    font-family: Tahoma, Verdana, Arial, Sans-Serif;
+    font-size: 13px;
+    padding: 10px;
+}
+
+/* Select element styling for light mode */
+body.light-mode select {
+    background: #ffffff !important;
+    color: #333 !important;
+    padding: 9px;
+    border: 1px solid #ccc !important;
+    font-family: Tahoma, Verdana, Arial, Sans-Serif;
+    font-size: 13px;
+}
+
+/* Button styling for light mode */
+body.light-mode button,
+body.light-mode input.button {
+    background: #e0e0e0 !important;
+    color: #111 !important;
+    border: 1px solid #bbb !important;
+    border-radius: 2px;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    padding: 10px 15px;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+body.light-mode #content {
+    background: #ffffff !important;
+    color: #222 !important;
+}
+
+body.light-mode .footer-distributed {
+    background: #f5f5f5 !important;
+    color: #222 !important;
+    border-top: 3px solid #2ecc71;
+}
+
+body.light-mode .haut {
+    background: #ffffff !important;
+    color: #000 !important;
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Optional - Change link color in top bar */
+body.light-mode .haut a {
+    color: #222 !important;
+}
+
+/* ===== Light Mode for table rows ===== */
+/* Styling for even table rows in light mode */
+body.light-mode .trow1 {
+    background: #ffffff !important;
+    border-top: 1px solid #ddd !important;
+    border-bottom: 1px solid #ddd !important;
+    color: #222 !important;
+}
+
+/* Styling for odd table rows in light mode */
+body.light-mode .trow2 {
+    background: #f9f9f9 !important;
+    border-bottom: 1px solid #ddd !important;
+    color: #222 !important;
+}
+/* ===== Light Mode for .tcat and .navigation ===== */
+
+/* Styling for table category headers in light mode */
+body.light-mode .tcat {
+    background-color: #e0e0e0 !important;
+    border-bottom: 1px solid #ccc !important;
+    color: #333 !important;
+    font-weight: 600;
+}
+
+/* Styling for navigation bar in light mode */
+body.light-mode .navigation {
+    background: #f0f0f0 !important;
+    color: #2ecc71 !important;
+    border-bottom: 3px solid #ccc !important;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    border-radius: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ===== Dark Mode (Default) Styles ===== */
+/* Main body styles (dark mode) */
+body {
+	background: #161616;
+	color: #a3a3a3;
+	text-align: center;
+	line-height: 1.4;
+	margin: 0;
+	overflow-y: scroll;
+	text-decoration: none;
+	font-family: Open Sans;
+	font-size: 13px;
+}
+
+html{
+	min-height: 100%;
+	position: relative;
+}
+
+body {
+	margin: 0;
+	margin-bottom: 180px;
+}
+
+.post_flexible
+{
+	display:flex;
+}
+
+/* Website Overrride title styles */
+.wo_title {
+	color: #2ECC71;
+	margin-left: 15px;
+	display: block;
+	margin-top: 20px;
+	
+	font-family: Source Sans Pro;
+	font-size: 25px;
+}
+
+/* Website Override desc*/
+.wo_desc {
+	color: #787878;
+	display: inline-block;
+	margin: 15px 15px 40px;
+	
+	font-size: 15px;
+}
+
+/* Home-Btitle stylers */
+#hb_title {
+	color: white;
+	font-size: 30px;
+	position: relative;
+	font-family: 'Roboto';
+	left: 85px;
+	top: 30px;
+}
+
+/* Home-Btitle description stylers */
+#hb_desc {
+	font-size: 18px; text-align: left; font-family: Source Sans Pro;
+}
+
+/* Styles for 'home_bit' element (link to homepage) */
+#home_bit {
+	color: #27AE60;
+	padding: 0px 3px 0px 17px;
+	position: relative;
+	cursor: pointer;
+	font-size: 17px;
+	transition: all 150ms;
+	display: inline-block;
+}
+
+/* Styles for navigation links */
+.nav_link {
+	text-decoration: none;
+	color: #2ECC71;
+	float: right;
+	position: relative;
+	top: -15px;
+	font-size: 15px;
+	padding: 16px;
+	transition: background 200ms;
+	cursor: pointer;
+}
+
+/* Hover state for navigation links */
+.nav_link:hover {
+	background: #FCFCFC;
+	border-bottom: 2px solid #2ECC71;
+}
+
+/* Link styles (general) */
+.nav_link a:link, a:hover, a {
+	text-decoration: none;
+}
+
+/* Icon style for subforum (lock icon) */
+.subforum_miniofflock i:before {
+	content: "\f148";
+}
+
+/* Icon style for subforum (link icon) */
+.subforum_miniofflink i:before {
+	content: "\f148";
+}
+
+/* Hide mobile navigation by default */
+#nav_mobile {
+	display:none;
+}
+
+/* Forum container style */
+.forum {
+	float: left; 
+}
+
+/* Link styles (default state) */
+a:link, a:active, a:visited {
+	color: #e9e9e9;
+	text-decoration: none;
+}
+
+/* Link styles (hover state) */
+a:hover{
+	color: #27ae60;
+	text-decoration: underline;
+}
+
+/* Main container styles */
+#container {
+	background: #F6F6F6;
+	color: rgb(134,134,134);
+	text-align: left;
+	line-height: 1.4;
+	margin: 0;
+	
+	font-family: Roboto;
+	font-size: 13px;
+}
+
+/* Wrapper for content (limits width) */
+.wrapper {
+	width: 90%;
+	margin: auto auto;
+}
+
+/* Styles for the logo */
+#logo, #logo:hover {
+	color: #2cc670 !important;
+	position: relative;
+	padding: 15px 35px;
+	top: 15px;
+	
+	font-family: 'Lobster', cursive;
+	font-size: 27px;
+}
+
+/* Styles for main content area */
+#content {
+	background: #161616;
+	width: auto !important;
+	padding: 20px 10px;
+	overflow: hidden;
+}
+
+/* Styles for menu list in header */
+#header ul.menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* Styles for menu list items in header */
+#header ul.menu li {
+	margin: 0 7px;
+	display: inline;
+}
+
+/* Styles for menu links in header */
+#header ul.menu li a {
+	padding-left: 20px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	line-height: 16px;
+}
+
+/* Styles for top links in logo area */
+#logo ul.top_links {
+	font-weight: bold;
+	text-align: right;
+	margin: -10px 5px 0 0;
+}
+
+
+/* Styles for logout link in panel */
+#panel .upper a.logout {
+	font-weight: bold;
+	padding-right: 20px;
+	margin-left: 10px;
+}
+
+/* Styles for login and lost password links in panel */
+#panel .upper a.login,
+#panel .upper a.lost_password {
+	padding-left: 20px;
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+/* Styles for register link in panel */
+#panel .upper a.register {
+	padding-right: 20px;
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+/* Styles for panel links (left side) */
+#panel .lower ul.panel_links {
+	float: left;
+}
+
+
+/* Styles for user links (right side) */
+#panel .lower ul.user_links {
+	float: right;
+}
+
+/* Styles for user links in panel */
+#panel .lower ul.user_links li a {
+	padding: 0;
+	background-image: none;
+}
+
+/* Styles for upper panel area */
+#panel .upper {
+	background: rgb(15, 121, 242) none repeat scroll 0% 0%;
+	color: #fff;
+	padding: 2px;
+	clear: both;
+}
+
+/* Link styles in upper panel area */
+#panel .upper a:link,
+#panel .upper a:visited,
+#panel .upper a:hover,
+#panel .upper a:active {
+	color: #fff;
+}
+
+/* Styles for lower panel area */
+#panel .lower {
+	background: #efefef;
+	color: #999;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #ccc;
+	padding: 5px;
+	display:none; /* Hidden by default */
+}
+
+/* Link styles in lower panel area */
+#panel .lower a:link,
+#panel .lower a:visited,
+#panel .lower a:hover,
+#panel .lower a:active {
+	color: #666;
+}
+
+/* Styles for search form */
+#search {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	float: right;
+	vertical-align: middle;
+}
+
+/* Styles for buttons and textboxes in search form */
+#search input.button,
+#search input.textbox {
+	border-color: rgba(0, 0, 0, 0.36);
+}
+
+/* Styles for button in search form */
+#search input.button {
+	color: #fff;
+}
+
+/* Styles for input elements in search form */
+#search input {
+	margin: -3px 0;
+}
+
+/* Styles for "remember me" checkbox in quick login */
+#quick_login .remember_me input {
+	vertical-align: middle;
+	margin: -3px 0 0 5px;
+}
+
+/* Styles for footer */
+#footer {
+	clear: both;
+}
+
+/* Styles for menu list in footer */
+#footer ul.menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* Styles for menu list items in footer */
+#footer ul.menu li {
+	margin: 0 5px;
+	display: inline;
+}
+
+/* Link styles in footer */
+#footer a:link,
+#footer a:visited,
+#footer a:hover,
+#footer a:active {
+	color: #777;
+}
+
+/* Styles for upper footer area */
+#footer .upper {
+	background: #efefef;
+	border-top: 1px solid #bbb;
+	border-bottom: 1px solid #bbb;
+	padding: 6px;
+	font-size: 12px;
+	overflow: hidden;
+}
+
+/* Styles for language selector in footer */
+#footer .upper .language {
+	float: right;
+	margin: -1px;
+	margin-left: 15px;
+}
+
+/* Styles for select element in language selector */
+#footer .upper .language select {
+	border-color: #ccc;
+}
+
+/* Styles for theme selector in footer */
+#footer .upper .theme {
+	float: right;
+	margin: -1px;
+	margin-left: 15px;
+}
+
+/* Styles for select element in theme selector */
+#footer .upper .theme select {
+	border-color: #ccc;
+}
+
+/* Styles for bottom links in footer */
+#footer .upper ul.bottom_links {
+	float: left;
+	margin: 4px 0 0 0;
+}
+
+/* Styles for lower footer area */
+#footer .lower {
+	color: #666;
+	padding: 6px 6px 12px 6px;
+	overflow: hidden;
+	font-size: 11px;
+}
+
+/* Link styles in lower footer area */
+#footer .lower a:link,
+#footer .lower a:visited {
+	color: #444;
+	font-weight: bold;
+}
+
+/* Link styles on hover in lower footer area */
+#footer .lower a:hover,
+#footer .lower a:active {
+	color: #333;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+/* Styles for current time in footer */
+#footer .lower #current_time {
+	float: right;
+	color: #888;
+}
+
+/* Styles for debug information */
+#debug {
+	float: right;
+	text-align: right;
+	margin-top: 20px;
+	font-size: 11px;
+}
+
+/* Make images scale to fit their container */
+.scaleimages img {
+	max-width: 100%;
+}
+
+/* Styles for forum status icons */
+.forum_status {
+height: 50px;
+width: 50px;
+font-size: 30px;
+text-align: center;
+}
+
+/* Center icons */
+.forum_status i {
+display: inline-block;
+line-height: 50px;
+}
+
+/* Online forum status icon color */
+.forum_on {
+color: #27ae60;
+}
+
+/* Styles for forum icons (offline, locked, link) */
+.forum_off, .forum_offlock, .forum_offlink {
+color: #27ae60;
+}
+
+/* Add default forum off Icon */
+.forum_off i {
+}
+
+/* Add forum locked Icon */
+.forum_offlock i:before {
+content: "\f023";
+}
+
+/* Add forum link Icon */
+.forum_offlink i:before {
+content: "\f0c1";
+}
+
+/* Styles for subforum icons */
+.subforumicon {
+	display: inline-block;
+	margin: 0 5px;
+}
+
+/* Icon colors for different subforum statuses */
+.subforum_minion {
+	color: #27ae60;
+}
+
+.subforum_minioff {
+	color: #27ae60;
+}
+
+.subforum_miniofflock {
+	color: #27ae60;
+}
+
+.subforum_miniofflink {
+	color: #27ae60;
+}
+
+/* Styles for tables */
+table {
+	color: #ccc;
+	font-size: 13px;
+}
+
+/* Styles for main table container */
+.tborder {
+	width: 100%;
+	margin: auto auto;
+	border-radius: 2px;
+	box-shadow: none;
+}
+
+/* Styles for fixed table layout */
+.tfixed {
+	table-layout: fixed;
+	word-wrap: break-word;
+}
+
+/* Styles for table header row */
+.thead {
+	background: #2ecc71;
+	color: #FFF;
+	padding: 14px 17px;
+	font-size: 15px;
+}
+
+/* Link styles in table header */
+.thead a:link {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.thead a:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.thead a:hover,
+.thead a:active {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+/* Styles for table category header */
+.tcat {
+	
+	background-color: #2b2b2b;
+	border-bottom: 1px solid #181818;
+	font-weight: 500;
+	padding: 9px;
+	color: #b2b2b2;
+}
+
+/* Link styles in table category header */
+.tcat a:link {
+	color: #FFF;
+}
+
+.tcat a:hover,
+.tcat a:active {
+	color: #fff;
+}
+
+/* Styles for even table rows */
+.trow1 {
+	background: #202020;
+	padding: 10px;
+	border-top: 1px solid #222;
+	border-bottom: 1px solid #222;
+}
+
+/* Styles for odd table rows */
+.trow2 {
+	padding: 13px;
+	background: #202020;
+	border-top: none;
+	border-bottom: 1px solid #222;
+}
+
+/* Styles for shaded table rows */
+.trow_shaded {
+	background: #ffdde0;
+	border: 1px solid;
+	border-color: #fff #ffb8be #ffb8be #fff;
+}
+
+/* Remove bottom border from table cell */
+.no_bottom_border {
+	border-bottom: 0;
+}
+
+/* Styles for unapproved posts */
+.post.unapproved_post {
+	background: #ffdde0;
+}
+
+.post.unapproved_post .post_author {
+	border-bottom-color: #ffb8be;
+}
+
+.post.classic.unapproved_post .post_author {
+	border-color: #ffb8be;
+}
+
+.post.unapproved_post .post_controls {
+	border-top-color: #ffb8be;
+}
+
+/* Styles for deleted rows and posts */
+.trow_deleted,
+.post.deleted_post {
+	background: #E8DEFF;
+}
+
+/* Styles for selected rows */
+.trow_selected,
+tr.trow_selected td {
+	background: #FFE9EB;
+	color: #333;
+	border-bottom-color: #F6D1D6;
+}
+
+.trow_selected a:link,
+.trow_selected a:visited,
+.trow_selected a:hover,
+.trow_selected a:active {
+	color: #333;
+}
+
+/* Styles for row separators */
+.trow_sep {
+	background: #1a1919;
+	color: #838383;
+	padding: 8px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+/* Styles for table footer */
+.tfoot {
+	color: inherit;
+	/*! background: rgb(32, 32, 32); */
+	padding: 11px;
+	/*! position: relative; */
+	/*! top: 5px; */
+}
+
+/* Link styles in table footer */
+.tfoot a:link {
+	color: rgb(58, 58, 59);
+	text-decoration: none;
+}
+
+.tfoot a:visited {
+	color: rgb(58, 58, 59);
+	text-decoration: none;
+}
+
+.tfoot a:hover,
+.tfoot a:active {
+	color: rgb(58, 58, 59, 0.5);
+	text-decoration: none;
+}
+
+/* Styles for input and select elements in table header */
+.thead input.textbox,
+.thead select {
+	border: 1px solid #263c30;
+}
+
+/* Styles for bottom menu */
+.bottommenu {
+	background: #efefef;
+	color: #333;
+	border: 1px solid #4874a3;
+	padding: 10px;
+}
+
+/* Styles for navigation breadcrumb */
+.navigation {
+	background: #2B2B2B;
+	color: #27ae60;
+	padding: 17px 0px;
+	border-bottom: 3px solid #202020;
+	font-family: Open Sans;
+	font-size: 15px;
+	border-radius: 2px;
+}
+
+/* Styles for advice message */
+.advice {
+	background: #E74C3C;
+	width: 86%;
+	color: #FFF;
+	text-align: center;
+	border-radius: 0px;
+	padding: 13px;
+	margin-top: 25px;
+	font-size: 14px;
+}
+
+/* Styles for mobile member message */
+#mobile_member {
+	background: #2ECC71;
+	width: 86%;
+	color: #FFF;
+	text-align: center;
+	border-radius: 0px;
+	padding: 13px;
+	margin-top: 25px;
+	display: none;
+	
+	font-size: 14px;
+}
+
+/* Link styles in mobile member message */
+#mobile_member a{
+	color:white;
+}
+
+/* Link styles in navigation */
+.navigation a:link {
+	text-decoration: none !important;
+}
+
+.navigation a:visited {
+	text-decoration: none !important;
+}
+
+.navigation a:hover,
+.navigation a:active {
+	text-decoration: none !important;
+}
+
+/* Styles for active navigation link */
+.navigation .active {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+/* Styles for small text */
+.smalltext {
+	font-size: 12px;
+}
+
+/* Styles for large text */
+.largetext {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+/* Styles for fieldsets */
+fieldset {
+	padding: 12px;
+	border: none;
+	margin: 0;
+}
+
+/* Styles for fieldsets in table rows */
+fieldset.trow1,
+fieldset.trow2 {
+	border-color: #444;
+}
+
+/* Styles for right-aligned fieldsets */
+fieldset.align_right {
+	text-align: right;
+}
+
+/* Styles for text input boxes */
+input.textbox {	
+	color: #878787;
+    border: 1px solid #303030;
+    outline: 0;
+    font-family: Tahoma, Verdana, Arial, Sans-Serif;
+    font-size: 13px;
+    background-color: #242424;
+	padding: 10px;
+}
+
+/* Styles for textareas */
+textarea {
+	color: #878787;
+    border: 1px solid #303030;
+    padding: 2px;
+    line-height: 1.4;
+    outline: 0;
+    font-family: Tahoma, Verdana, Arial, Sans-Serif;
+    font-size: 13px;
+    background-color: #242424;
+}
+
+/* Styles for select elements */
+select {
+	background: #242424;
+	color:#878787;
+	padding: 9px;
+	border: 1px solid #303030;
+	outline: 0;
+	font-family: Tahoma, Verdana, Arial, Sans-Serif;
+	font-size: 13px;
+}
+
+/* Styles for buttons */
+button,
+input.button {
+	background: #323232;
+	color: #B3B3B3;
+	padding: 10px 15px;
+	cursor: pointer;
+	border: 1px solid #333;
+	border-radius: 2px;
+	outline: 0;
+	transition: 600ms;
+	
+	font-family: Roboto;
+	font-size: 15px;
+}
+
+/* Hover effect for buttons */
+button:hover,
+input.button:hover {
+	background: #2ECC71;
+	color: white;
+}
+
+/* Styles for forms */
+form {
+	margin: 0;
+	padding: 0;
+}
+
+/* Styles for error input fields */
+input.error, textarea.error, select.error {
+	border: 1px solid #f30;
+	color: #f30;
+}
+
+/* Styles for valid input fields */
+input.valid, textarea.valid, select.valid {
+	border: 1px solid #0c0;
+}
+
+/* Styles for error labels */
+label.error {
+	color: #f30;
+	margin: 5px;
+	padding: 0px;
+	display: block;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+/* Styles for message input in forms */
+form #message {
+    width: 500px;
+}
+
+/* Styles for editor */
+.editor {
+	background: #f1f1f1;
+	border: 1px solid #ccc;
+}
+
+/* Styles for editor control bar */
+.editor_control_bar {
+	background: #fff;
+	border: 1px solid #ccc;
+}
+
+.post .editor_control_bar {
+	background: #f5f5f5;
+}
+
+/* Styles for popup menus */
+.popup_menu {
+	background: #fff;
+	border: 1px solid #ccc;
+	z-index: 100;
+}
+
+.popup_menu .popup_item {
+	background: #efefef;
+	color: #333;
+}
+
+.popup_menu .popup_item:hover {
+	background: #0072BC;
+	color: #fff;
+}
+
+/* Reputation styles */
+.trow_reputation_positive {
+	background: #ccffcc;
+}
+
+.trow_reputation_negative {
+	background: #ffcccc;
+}
+
+.reputation_positive {
+	color: green;
+}
+
+.reputation_neutral {
+	color: #444;
+}
+
+.reputation_negative {
+	color: red;
+}
+
+.repbox {
+	font-size:16px;
+	font-weight: bold;
+	padding:5px 7px 5px 7px;
+}
+
+._neutral {
+	background-color:#FAFAFA;
+	color: #999999;
+	border:1px solid #CCCCCC;
+}
+
+._minus {
+	background-color: #FDD2D1;
+	color: #CB0200;
+	border:1px solid #980201;
+}
+
+._plus {
+	background-color:#E8FCDC;
+	color: #008800;
+	border:1px solid #008800;
+}
+
+/* Image styles */
+img {
+	border: none;
+}
+
+img.attachment {
+	border: 1px solid #E9E5D7;
+	padding: 2px;
+}
+
+/* Horizontal rule style */
+hr {
+	background-color: #000000;
+	color: #000000;
+	height: 1px;
+	border: 0px;
+}
+
+/* Clearfix */
+.clear {
+	clear: both;
+}
+
+/* Float left utility class */
+.float_left {
+	float: left;
+}
+
+/* Float right utility class */
+.float_right {
+	float: right;
+}
+
+/* Hidden element utility class */
+.hidden {
+	display: none;
+	float: none;
+	width: 1%;
+}
+
+/* Hidden row utility class */
+.hiddenrow {
+	display: none;
+}
+
+/* Select all style */
+.selectall {
+	background: #FFFBD9;
+	border-bottom: 1px solid #F7E86A;
+	color: #333;
+	text-align: center;
+}
+
+/* Expand/collapse image style */
+.expcolimage {
+	float: right;
+	width: auto;
+	vertical-align: middle;
+}
+
+.tcat_menu > .expcolimage {
+	margin-top: 0;
+}
+
+/* Blockquote styles */
+blockquote {
+	background: rgb(40, 40, 40) none repeat scroll 0% 0%;
+	margin: 10px;
+	padding: 10px;
+	border-left: 3px solid rgba(102, 102, 102, 0.21);
+}
+
+/* Blockquote cite styles */
+blockquote cite {
+	display: block;
+	padding-bottom: 3px;
+	margin: 0 0 10px 0;
+	
+	font-style: normal;
+	font-weight: bold;
+}
+
+blockquote cite span {
+	float: right;
+	font-weight: normal;
+	font-size: 12px;
+	color: #666;
+}
+
+blockquote cite span.highlight {
+	float: none;
+	font-weight: bold;
+	padding-bottom: 0;
+}
+
+/* Code block styles */
+.codeblock {
+	background: #fff;
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+
+.codeblock .title {
+	border-bottom: 1px solid #ccc;
+	font-weight: bold;
+	padding-bottom: 3px;
+	margin: 0 0 10px 0;
+}
+
+.codeblock code {
+	overflow: auto;
+	height: auto;
+	max-height: 200px;
+	display: block;
+	font-family: Monaco, Consolas, Courier, monospace;
+	font-size: 13px;
+}
+
+/* Smilie styles */
+.smilie {
+	vertical-align: middle;
+}
+
+.smilie_pointer {
+	cursor: pointer;
+}
+
+/* Separator list style */
+.separator {
+	margin: 5px;
+	padding: 0;
+	height: 0px;
+	font-size: 1px;
+	list-style-type: none;
+}
+
+/* Styles for items in a popup menu */
+.popup_menu .popup_item_container {
+	margin: 1px;
+	text-align: left;
+}
+
+/* Styles for individual popup items */
+.popup_menu .popup_item {
+	display: block;
+	padding: 4px;
+	white-space: nowrap;
+	text-decoration: none;
+}
+
+/* Hover effect for popup items */
+.popup_menu a.popup_item:hover {
+	text-decoration: none;
+}
+
+/* Styles for new subjects */
+.subject_new {
+	font-weight: bold;
+}
+
+/* Highlight style */
+.highlight {
+	background: #FFFFCC;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+/* Styles for private message alerts */
+.pm_alert {
+	background: #FFF6BF;
+	text-align: center;
+	padding: 12px 20px;
+	margin-bottom: 15px;
+	border-radius:2px;
+	
+	font-size: 13px;
+}
+
+/* Styles for red alerts */
+.red_alert {
+	background: #FBE3E4;
+	color: #A5161A;
+	text-align: center;
+	padding: 12px 20px;
+	margin-bottom: 15px;
+	word-wrap: break-word;
+	border-radius: 2px;
+	
+	font-size: 13px;
+}
+
+/* Link styles in red alerts */
+.red_alert a:link,
+.red_alert a:visited,
+.red_alert a:hover,
+.red_alert  a:active {
+	color: #A5161A;
+}
+
+/* Warning levels styles */
+.high_warning {
+	color: #CC0000;
+}
+
+.moderate_warning {
+	color: #F3611B;
+}
+
+.low_warning {
+	color: #AE5700;
+}
+
+/* Online/offline status styles */
+.online {
+	color: #15A018;
+}
+
+.offline {
+	color: #C7C7C7;
+}
+
+/* Error message container style */
+div.error {
+	padding: 5px 10px;
+	border-top: 2px solid #FFD324;
+	border-bottom: 2px solid #FFD324;
+	background: #FFF6BF;
+	font-size: 12px;
+}
+
+div.error p {
+	margin: 0;
+	color: #333;
+	font-weight: normal;
+}
+
+/* Emphasized text in error messages */
+div.error p em {
+	font-style: normal;
+	font-weight: bold;
+	padding-left: 24px;
+	display: block;
+	color: #C00;
+}
+
+/* Unordered list in error messages */
+div.error ul {
+	margin-left: 24px;
+}
+
+/* Styles for pagination */
+.pagination {
+	padding-top: 5px;
+	position: relative;
+	display: block;
+	
+	font-size: 13px;
+	top: 15px;
+}
+
+/* Adjust padding for pagination in table footer and category header */
+.tfoot .pagination,
+.tcat .pagination {
+	padding-top: 0;
+}
+
+/* Styles for pagination pages */
+.pagination .pages {
+	font-weight: bold;
+}
+
+/* Styles for current page and regular page links in pagination */
+.pagination .pagination_current,
+.pagination a {
+	background: #f5f5f5;
+	padding: 8px 8px;
+	transition:200ms;
+}
+
+/* Styles for regular pagination links */
+.pagination a {
+	background: #323232;
+}
+
+/* Styles for the current page in pagination */
+.pagination .pagination_current {
+	background: none;
+	color: #e9e9e9;
+	border: none;
+	font-weight: bold;
+}
+
+/* Hover effect for pagination links */
+.pagination a:hover {
+	background: #27AE60;
+	color: #fff;
+	border-color: #27AE60;
+	
+	text-decoration: none;
+}
+
+/* Styles for "go to page" image in pagination */
+.pagination .go_page img {
+	margin-bottom: -4px;
+}
+
+/* Styles for dropdown to select page */
+.drop_go_page {
+	background: #f5f5f5;
+	padding: 4px;
+}
+
+/* Styles for pagination breadcrumb */
+.pagination_breadcrumb {
+	background-color: #2b2b2b;
+	border: 1px solid #202020;
+	padding: 9px;
+	margin-top: 5px;
+	font-weight: normal;
+}
+
+/* Styles for breadcrumb links in pagination */
+.pagination_breadcrumb_link {
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+/* Styles for thread legend (icons and descriptions) */
+.thread_legend,
+.thread_legend dd {
+	margin: 0;
+	padding: 0;
+}
+
+/* Style for thread legends Description */
+.thread_legend dd {
+	padding-bottom: 4px;
+	margin-right: 15px;
+}
+
+/* Legend Icon*/
+.thread_legend img {
+	margin-right: 4px;
+	vertical-align: bottom;
+}
+
+/* Forum legend containers */
+.forum_legend,
+.forum_legend dt,
+.forum_legend dd {
+	margin: 0;
+position: relative;
+top: 11px;
+	padding: 0;
+}
+
+/* Legend Descrption formatting */
+.forum_legend dd {
+	float: left;
+	margin-right: 10px;
+	margin-top: 7px;
+}
+
+/* Legend title formatting */
+.forum_legend dt {
+	margin-right: 10px;
+	float: left;
+}
+
+/* Styles for success messages */
+.success_message {
+	color: #00b200;
+	font-weight: bold;
+	font-size: 10px;
+	margin-bottom: 10px;
+}
+
+/* Styles for error messages */
+.error_message {
+	color: #C00;
+	font-weight: bold;
+	font-size: 10px;
+	margin-bottom: 10px;
+}
+
+/* Styles for posts container */
+#posts_container {
+	padding: 0;
+	background: rgb(22, 22, 22);
+}
+
+/* Styles for ignored posts */
+.ignored_post {
+	border-top: 3px solid #333;
+	padding: 15px;
+}
+
+.ignored_post .show_ignored_post {
+	margin-top: -15px;
+}
+
+/* Styles for posts */
+.post {
+	background: #282828;
+	overflow: hidden;
+	border-radius: 2px;
+	border: 1px solid #303030;
+}
+
+/* Classic post look */
+.post.classic {
+	margin-top: 15px;
+}
+
+/* Post Author container */
+.post .post_author {
+	background: #282828;
+	overflow: hidden;
+}
+
+/* Formatted layout  Post Author container */
+.post.classic .post_author {
+	width: 20%;
+	border-left: none;
+	float: left;
+	padding: 20px 20px;
+	border-right: 1px solid #303030;
+}
+
+/* Buddy status settings*/
+.post .post_author .buddy_status {
+	vertical-align: middle;
+	margin-top: -4px;
+}
+
+/* Avatar Image */
+.post .post_author div.author_avatar {
+	float: left;
+	margin-right: 3px;
+}
+
+/* Avatar Image Formatted style */
+.post.classic .post_author div.author_avatar {
+	float: none;
+	text-align: center;
+	margin-top: 14px;
+}
+
+/* Avatar Img styles */
+.post .post_author div.author_avatar img {
+	background: #FFF none repeat scroll 0% 0%;
+	border-radius: 50%;
+	box-shadow: 0px 0px 2px #696969;
+}
+
+/* Authro infomation conatiner styles */
+.post .post_author div.author_information {
+	float: left;
+	padding: 6px 8px;
+}
+
+/* Author Infomration formated for the classic view*/
+.post.classic .post_author div.author_information {
+	text-align: center;
+	padding: 0px;
+	float: none;
+}
+
+/* Author statisic Container*/
+.post .post_author div.author_statistics {
+	float: none;
+	font-size: 13px;
+	padding: 17px 19px;
+	color: #a3a3a3;
+	line-height: 1.3;
+}
+
+/* Author Static layout adjustment */
+.post.classic .post_author div.author_statistics {
+	margin: 2px;
+	padding: 17px 19px;
+	float: none;
+	margin-bottom: 10px;
+}
+
+/* Post Header for Date */
+.post .post_head {
+	font-size: 11px;
+	padding-bottom: 4px;
+	margin-bottom: 15px;
+}
+
+/* Time and date styles */
+.post .post_head span.post_date {
+	color: #666;
+}
+
+/* Date Edited */
+.post .post_head span.edited_post {
+	font-size: 10px;
+	color: #999;
+}
+
+/* Time and DAte Text Color */
+.post .post_head span.edited_post a {
+	color: #666;
+}
+
+/* Post Font size*/
+.post_ {
+	font-size: 14px;
+	padding: 12px 0;
+}
+
+/* Foratted Conatiner */
+.post.classic .post_content {
+	width: 90%;
+	position:relative;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+/* Post COntent conatiner */
+.post_content {
+	padding: 22px 13px;
+}
+
+/* Post Singture container */
+.post_content .signature {
+	margin-top: 5px;
+	border-top: 1px dotted #ddd;
+	padding: 10px 0 4px 0;
+}
+
+/* Meta style for date post*/
+.post .post_meta {
+	margin: 4px 0;
+	font-size: 11px;
+	color: #999;
+}
+
+/* Meta Link Colors Style*/
+.post .post_meta a:link,
+.post .post_meta a:visited {
+	color: #777;
+}
+
+.post .post_meta a:hover,
+.post .post_meta a:active {
+	color: #777;
+}
+
+/* Post Controll Pannel*/
+.post_controls {
+	clear: both;
+	padding: 5px 10px;
+	overflow: hidden;
+	border-top: 1px solid #303030;
+	background:#282828;
+}
+
+/* Post Buttons */
+.postbit_buttons > a:link,
+.postbit_buttons > a:hover,
+.postbit_buttons > a:visited,
+.postbit_buttons > a:active {
+	color: #CCC;
+	display: inline-block;
+	margin: 2px;
+	padding: 7px;
+	transition:200ms;
+	font-size: 15px;
+}
+
+/* Post button Hover color*/
+.postbit_buttons > a:hover {
+	opacity: 0.8;
+}
+
+/* Post Pannel Styling*/
+.postbit_buttons a span {
+	display: inline-block;
+	height: 16px;
+}
+
+
+/* Genral post button and link hover styling*/
+a.button:link,
+a.button:visited,
+a.button:active {
+	background: #323232;
+	color: #FFF;
+	margin: 2px;
+	border-radius: 2px;
+	padding: 11px 15px;
+	transition: all 600ms;
+	border: none;
+	
+	text-decoration: none;
+	font-size: 14px;
+}
+
+/*Button hover effect */
+a.button:hover {
+	background: #2ECC71;
+	color: #FFF;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+/* Small Botton formatters*/
+a.button.small_button {
+	font-size: 13px;
+	margin: 0;
+	padding: 11px 15px;
+}
+
+/* Button Container Styles*/
+a.button span {
+	display: inline-block;
+}
+
+
+/* Quick JUmp Bottons*/
+.quick_jump {
+}
+
+/* Poll bar formater*/
+.pollbar {
+	border: 1px solid #3f3f3f;
+	height: 10px;
+}
+
+/* Poll Container Style*/
+.pollbar .percent {
+	display: none;
+}
+
+/* POst Icon Formatter*/
+.posticons_label {
+	white-space: nowrap;
+}
+
+/** jGrowl Start **/
+
+/** Special IE6 Style Positioning **/
+.ie6 {
+	position: absolute;
+}
+
+.ie6.top-right {
+	right: auto;
+	bottom: auto;
+	left: expression( ( 0 - jGrowl.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+
+.ie6.top-left {
+	left: expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+
+.ie6.bottom-right {
+	left: expression( ( 0 - jGrowl.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: expression( ( 0 - jGrowl.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+
+.ie6.bottom-left {
+	left: expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: expression( ( 0 - jGrowl.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+
+.ie6.center {
+	left: expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+	width: 100%;
+}
+
+/** jGrowl Styling **/
+/* Position the jGrowl container */
+.jGrowl {
+	z-index: 9999; /* Ensure it's on top */
+	color: #fff;
+	font-size: 12px;
+	position: fixed; /* Fixed position */
+}
+
+/* Top-left position */
+.jGrowl.top-left {
+	left: 0px;
+	top: 0px;
+}
+
+/* Top-right position */
+.jGrowl.top-right {
+	right: 0px;
+	top: 0px;
+}
+
+/* Bottom-left position */
+.jGrowl.bottom-left {
+	left: 0px;
+	bottom:	0px;
+}
+
+/* Bottom-right position */
+.jGrowl.bottom-right {
+	right: 0px;
+	bottom: 0px;
+}
+
+/* Center position */
+.jGrowl.center {
+	top: 0px;
+	width: 50%;
+	left: 25%;
+}
+
+/** Cross Browser Styling **/
+/* Center notifications and closers when the jGrowl is in the center */
+.center .jGrowl-notification,
+.center .jGrowl-closer {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* jGrowl notification and closer styles */
+.jGrowl .jGrowl-notification,
+.jGrowl .jGrowl-closer {
+	background-color: #000; /* Dark background */
+	opacity: .85; /* Transparency */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)"; /* IE8 opacity */
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85); /* IE opacity */
+	zoom: 1;
+	width: 235px;
+	padding: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	text-align: left;
+	display: none; /* Hidden by default */
+	border-radius: 5px;
+}
+
+/* Minimum height for notifications */
+.jGrowl .jGrowl-notification {
+	min-height: 40px;
+}
+
+/* Margins for notifications and closers */
+.jGrowl .jGrowl-notification,
+.jGrowl .jGrowl-closer {
+	margin: 10px;
+}
+
+/* Header within notification */
+.jGrowl .jGrowl-notification .jGrowl-header {
+	font-weight: bold;
+	font-size: .85em;
+}
+
+/* Close button within notification */
+.jGrowl .jGrowl-notification .jGrowl-close {
+	z-index: 99;
+	float: right;
+	font-weight: bold;
+	font-size: 1em;
+	cursor: pointer;
+}
+
+/* Style for the closer (to close all notifications) */
+.jGrowl .jGrowl-closer {
+	padding-top: 4px;
+	padding-bottom: 4px;
+	cursor: pointer;
+	font-size: .9em;
+	font-weight: bold;
+	text-align: center;
+}
+
+/** Hide jGrowl when printing **/
+/* Do not display the notifications when printing */
+@media print {
+	.jGrowl {
+		display: none;
+}
+}
+
+/** jGrowl End **/
+
+/** Modal Start **/
+/* The overlay that covers the page */
+.blocker {
+    position: fixed; /* Stay in place */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 9999; /* On top of everything */
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.65); /* Semi-transparent background */
+    text-align: center; /* Center the modal content */
+}
+
+/* A trick to vertically center the modal content */
+.blocker::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.05em; /* Corrects for inline-block gaps */
+}
+
+/* Modal window styling */
+.modal {
+    width: 400px;
+    text-align: left;
+    background: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 2; /* Above the blocker */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -o-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 0 10px #000; /* Shadow for better visibility */
+    -moz-box-shadow: 0 0 10px #000;
+    -o-box-shadow: 0 0 10px #000;
+    -ms-box-shadow: 0 0 10px #000;
+    box-shadow: 0 0 10px #000;
+}
+
+/* Close button styling */
+.modal a.close-modal {
+	position: absolute; /* Positioned within the modal */
+	top: -12.5px;
+	right: -12.5px;
+	display: block;
+	width: 30px;
+	height: 30px;
+	font-size:0px; /* Hide the text */
+}
+
+/* Close icon (using Font Awesome) */
+.modal a.close-modal:before{
+  font-family:"Font Awesome 5 Free";
+  font-size:25px;
+  content:"\f410"; /* Times circle icon */
+}
+
+/* Spinner (loading animation) */
+.modal-spinner {
+	display: none; /* Hidden by default */
+	width: 64px;
+	height: 64px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-right: -32px;
+	margin-top: -32px;
+	background: url(../../../images/spinner_big.gif) no-repeat center center; /* Loading GIF */
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+	-ms-border-radius: 8px;
+	border-radius: 8px;
+}
+
+/** Modal End **/
+
+/** Impromptu Start **/
+
+/*! jQuery-Impromptu - v5.2.4 - 2014-05-26
+* http://trentrichardson.com/Impromptu
+* Copyright (c) 2014 Trent Richardson; Licensed MIT */
+
+/* Fade overlay styling */
+.jqifade {
+	position: absolute;
+	background-color: #777777; /* Semi-transparent dark background */
+}
+
+/* Main Impromptu dialog styling */
+div.jqi {
+	width: 400px;
+	max-width:90%; /* Responsive width */
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	position: absolute;
+	background-color: #ffffff;
+	font-size: 11px;
+	text-align: left;
+	border: solid 1px #eeeeee;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	padding: 7px;
+}
+
+/* Close button styling */
+div.jqi .jqiclose {
+	position: absolute;
+	top: 4px; right: -2px;
+	width: 18px;
+	cursor: default;
+	color: #bbbbbb;
+	font-weight: bold;
+}
+
+/* Content state styling */
+div.jqi .jqistate {
+	background-color: #fff;
+}
+
+/* Title bar styling */
+div.jqi .jqititle {
+	padding: 5px 10px;
+	font-size: 16px;
+	line-height: 20px;
+	border-bottom: solid 1px #eeeeee;
+}
+
+/* Message area styling */
+div.jqi .jqimessage {
+	padding: 10px;
+	line-height: 20px;
+	color: #444444;
+}
+
+/* Button container styling */
+div.jqi .jqibuttons {
+	text-align: right;
+	margin: 0 -7px -7px -7px;
+	border-top: solid 1px #e4e4e4;
+	background-color: #f4f4f4;
+	border-radius: 0 0 6px 6px;
+	-moz-border-radius: 0 0 6px 6px;
+	-webkit-border-radius: 0 0 6px 6px;
+}
+
+/* Button styling */
+div.jqi .jqibuttons button {
+	margin: 0;
+	padding: 6px 20px;
+	background-color: transparent;
+	font-weight: normal;
+	border: none;
+	border-left: solid 1px #e4e4e4;
+	color: #777;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+/* Default button styling */
+div.jqi .jqibuttons button.jqidefaultbutton {
+	color: #489afe; /* Highlighted color */
+}
+
+/* Button hover/focus styling */
+div.jqi .jqibuttons button:hover,
+div.jqi .jqibuttons button:focus {
+	color: #287ade;
+	outline: none;
+}
+
+/* Sub-states styling */
+div.jqi .jqiparentstate::after {
+	background-color: #777;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+
+/* Sub-state styling */
+div.jqi .jqisubstate {
+	position: absolute;
+	top: 0;
+	left: 20%;
+	width: 60%;
+	padding: 7px;
+	border: solid 1px #eeeeee;
+	border-top: none;
+	border-radius: 0 0 6px 6px;
+	-moz-border-radius: 0 0 6px 6px;
+	-webkit-border-radius: 0 0 6px 6px;
+}
+
+/* Sub-state button styling */
+div.jqi .jqisubstate .jqibuttons button {
+	padding: 10px 18px;
+}
+
+/* Arrows for tooltips/tours */
+.jqi .jqiarrow {
+	position: absolute;
+	height: 0; width: 0;
+	line-height: 0;
+	font-size: 0;
+	border: solid 10px transparent;
+}
+
+.jqi .jqiarrowtl {
+	left: 10px;
+	top: -20px;
+	border-bottom-color: #ffffff; /* Arrow color */
+}
+
+.jqi .jqiarrowtc {
+	left: 50%;
+	top: -20px;
+	border-bottom-color: #ffffff;
+	margin-left: -10px;
+}
+
+.jqi .jqiarrowtr {
+	right: 10px;
+	top: -20px;
+	border-bottom-color: #ffffff;
+}
+
+.jqi .jqiarrowbl {
+	left: 10px;
+	bottom: -20px;
+	border-top-color: #ffffff;
+}
+
+.jqi .jqiarrowbc {
+	left: 50%;
+	bottom: -20px;
+	border-top-color: #ffffff;
+	margin-left: -10px;
+}
+
+.jqi .jqiarrowbr {
+	right: 10px;
+	bottom: -20px;
+	border-top-color: #ffffff;
+}
+
+.jqi .jqiarrowlt {
+	left: -20px;
+	top: 10px;
+	border-right-color: #ffffff;
+}
+
+.jqi .jqiarrowlm {
+	left: -20px;
+	top: 50%;
+	border-right-color: #ffffff;
+	margin-top: -10px;
+}
+
+.jqi .jqiarrowlb {
+	left: -20px;
+	bottom: 10px;
+	border-right-color: #ffffff;
+}
+
+.jqi .jqiarrowrt {
+	right: -20px;
+	top: 10px;
+	border-left-color: #ffffff;
+}
+
+.jqi .jqiarrowrm {
+	right: -20px;
+	top: 50%;
+	border-left-color: #ffffff;
+	margin-top: -10px;
+}
+
+.jqi .jqiarrowrb {
+	right: -20px;
+	bottom: 10px;
+	border-left-color: #ffffff;
+}
